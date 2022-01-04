@@ -1,0 +1,42 @@
+project(assignment3){
+	
+	exename = calc
+	install = .
+
+	specific(make, gnuace){
+
+		compile_flags += -std=c++11
+	}
+
+	
+	Template_Files {
+		Basic_Array.cpp
+		Array.cpp
+		Fixed_Array.cpp
+		Stack.cpp
+		Queue.cpp
+		Array_Iterator.cpp
+	}
+
+	Source_Files {
+	
+		driver.cpp
+		Calculator.cpp
+		Add_Ex_Command.cpp
+		Sub_Ex_Command.cpp
+		Mult_Ex_Command.cpp
+		Div_Ex_Command.cpp
+		Mod_Ex_Command.cpp
+		Num_Ex_Command.cpp
+		Open_Ex_Command.cpp
+		Stack_Expr_Comm_Factory.cpp	
+	}
+
+
+	Header_Files {
+
+		Expr_Comm_Factory.h
+		Expr_Command.h
+	}
+
+}
